@@ -1,0 +1,23 @@
+pipeline{
+Agent any
+Stages{
+Stage('check validate'){
+Steps{
+Echo 'Iam validating the code'
+}}
+Stage('compilation'){
+Steps{
+Echo 'I am compiling the code'
+}}
+Stage('Install'){
+Steps{
+Echo 'I am installing the code'
+}}
+Stage('Deploy')
+{
+Steps{
+Echo 'I am devoloping the code'
+}
+}
+}
+}
